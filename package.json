@@ -1,11 +1,14 @@
 {
+  "homepage": "http://kenlkchow.github.io/project-2",
   "name": "basic-react-webpack-setup",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "webpack-dev-server --mode=development"
+    "serve": "webpack-dev-server --mode=development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +18,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.0",
+    "gh-pages": "^2.2.0",
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
